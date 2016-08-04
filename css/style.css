@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'EricssonFont';
+  src: url("../fonts/ericssoncapitaltt-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	/*background-image: url(../images/careers-desktop1.jpg);*/
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #002661;
+    margin: 0;
+    font-size: 24px;
+    font-family: EricssonFont,arial,verdana,sans-serif,clean;
+}
+header {
+    text-align: center;
+    background: linear-gradient(to right,#a1c517 0,#009045 25%,#0082b6 50%,#151f77 75%,#db004f 100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+}
+header .ericsson-logo {
+	float: right;
+    width: 82px;
+    margin-top: 8px;
+}
+header .heading {
+	display: inline-block;
+	font-size: 28px;
+	font-weight: bold;
+	padding-left: 82px;
+}
+header .heading i {
+	font-size: 35px;
+    padding-right: 10px;
+}
+section {
+    text-align: center;
+    width: 60%;
+    margin: 35px auto 0;
+    overflow: hidden;
+}
+.main-section-wrapper {
+    float: left;
+    width: 100%;
+    margin-top: 65px;
+}
+.like-unlike-wrapper {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+.main-section-wrapper .like-unlike-wrapper a i {
+	color: #002661;
+	font-size: 100px;
+}
+.main-section-wrapper .like-unlike-wrapper a {
+	display: inline-block;
+    margin: 0 20px;
+}
+.radio-experience-wrapper {
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+.radio-experience-wrapper .radio-wrapper div {
+    width: 50%;
+    float: left;
+    text-align: left;
+    margin: 0 0 40px;
+}
+.submit-btn {
+	padding: 10px 50px;
+    font-size: 16px;
+    margin-top: 60px;
+    background-color: #369;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.submit-btn:focus , .submit-btn:active{
+	outline: none;
+}
+.done-btn {
+    padding: 15px 50px;
+}
+.radio-experience-wrapper .radio-wrapper {
+	float: left;
+	width: 100%;
+}
+.radio-rating {
+	margin-top: 60px;
+}
+.radio-rating .radio-wrapper div {
+	display: inline-block;
+    width: 18%;
+}
+textarea {
+	height: 200px;
+    resize: none;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+}

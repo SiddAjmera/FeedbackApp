@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Ericsson: Gordon Mobile App Feedback</title>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script>var $ = jQuery = require("jquery");</script>
+    </head>
+    <body>
+        <header>
+            <p class="heading"><i class="fa fa-pencil"></i>IT FEED BACK</p>
+            <img class="ericsson-logo" src="images/ericssonlogo.svg" alt="ericssonlogo">
+        </header>
+
+        <section id="content">
+            
+        </section>
+
+    </body>
+    <script>
+        var app = require("./lib/app");
+        
+        app.on("rendered", function(renderedHTML){
+            $("#content").html(renderedHTML);
+        });
+
+        var showContent = function(view){
+            app.emit("view-selected", view);
+        }
+      
+        $(function(){
+            showContent("likeDislike");
+            $("#content").on("click", ".clickable", function(ev){
+                ev.preventDefault();
+                showContent(this.id);
+            });
+
+            $("#content").on("click", ".done-btn", function(ev){
+                //TODO: Some logic to record the data
+                require('electron').remote.getCurrentWindow().close();
+            });
+        });
+    </script>
+</html>
